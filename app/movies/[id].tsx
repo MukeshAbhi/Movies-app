@@ -1,12 +1,12 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const newroute = () => {
+const MovieDetails = () => {
   return (
     <View>
-      <Text>newroute</Text>
+      <Text>MovieDetails</Text>
     </View>
   )
 }
 
-export default newroute
+export default MovieDetails
