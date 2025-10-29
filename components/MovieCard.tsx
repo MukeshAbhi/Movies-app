@@ -15,7 +15,7 @@ const MovieCard = ({id, poster_path, title, vote_average, release_date}: Movie) 
                 }}
                 className='w-full h-52 rounded-lg'
             />
-            <Text className="text-sm font-bold text-white mt-2">{title}</Text>
+            <Text className="text-sm font-bold text-white mt-2" numberOfLines={1}>{title}</Text>
             <View className="flex-row items-center justify-start gap-x-1">
                 <Image source={icons.star} className='size-4'/>
                 <Text className='text-white text-xs font-bold uppercase'>{Math.round(vote_average / 2)}</Text>
@@ -23,6 +23,9 @@ const MovieCard = ({id, poster_path, title, vote_average, release_date}: Movie) 
             <View className='flex-row items-center justify-between'>
                 <Text className='text-xs text-light-300'>
                     {release_date?.split('-')[0]}
+                </Text>
+                <Text className='text-xs font-medium text-light-300 uppercase'>
+                    Movie
                 </Text>
             </View>
         </TouchableOpacity>
